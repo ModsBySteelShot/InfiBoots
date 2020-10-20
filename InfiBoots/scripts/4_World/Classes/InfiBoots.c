@@ -49,7 +49,7 @@ class InfiBootsConf
                 TStringArray setting = new TStringArray;
                 line.Split("=", setting);
 
-                settings.Set(setting.Get(0), setting.Get(1).ToFloat());
+                settings.Set(setting.Get(0), Math.AbsFloat(setting.Get(1).ToFloat()));
             }
 
             CloseFile(f);
