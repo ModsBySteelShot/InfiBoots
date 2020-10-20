@@ -50,6 +50,12 @@ class CfgMods
 				value = "";
 				files[] = {"InfiBoots/scripts/3_Game"};
 			};
+			
+			class missionScriptModule
+			{
+				value = "";
+				files[] = {"InfiBoots/scripts/5_Mission"};
+			};
 		};
 	};
 };
