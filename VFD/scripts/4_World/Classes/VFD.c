@@ -13,26 +13,26 @@
     along with this program. If not, see <https://www.gnu.org/licenses/>.
 */
 
-class InfiBoots
+class VFD
 {
-	private static ref InfiBootsConf config;
+	private static ref VFDConf config;
 
-    static InfiBootsConf GetConf()
+    static VFDConf GetConf()
     {
         return config;
     }
 
     static void Init()
     {
-        config = new InfiBootsConf();
+        config = new VFDConf();
     }
 }
 
-class InfiBootsConf
+class VFDConf
 {
-	private const string CONFIG_NAME = "InfiBoots.cfg";
+	private const string CONFIG_NAME = "VFD.cfg";
 
-	private const string CONFIG_PATH = "$profile:InfiBoots.cfg"
+	private const string CONFIG_PATH = "$profile:VFD.cfg"
 
 	private const float SHOES_MOVEMENT_DAMAGE_PER_STEP = 0.035;
 
@@ -54,7 +54,7 @@ class InfiBootsConf
 
             CloseFile(f);
 
-            Print("[InfiBoots] " + CONFIG_NAME + " was found. All values have been loaded.");
+            Print("[VFD] " + CONFIG_NAME + " was found. All values have been loaded.");
         }
         else
         {
@@ -73,10 +73,10 @@ class InfiBootsConf
 
         CloseFile(f);
 
-        Print("[InfiBoots] " + CONFIG_NAME + " was not found. Default file created.");
+        Print("[VFD] " + CONFIG_NAME + " was not found. Default file created.");
     }
 
-    void InfiBootsConf()
+    void VFDConf()
     {
         settings = new map<string, float>;
 

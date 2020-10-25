@@ -19,6 +19,6 @@ modded class MissionServer
     {
         super.OnMissionStart();
 
-        InfiBoots.Init();
+        VFD.Init();
     }
 }

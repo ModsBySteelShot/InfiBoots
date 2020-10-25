@@ -17,7 +17,7 @@
 
 class CfgPatches
 {
-    class InfiBoots
+    class VFD
     {
         units[] = {};
         weapons[] = {};
@@ -28,14 +28,14 @@ class CfgPatches
 
 class CfgMods
 {
-    class InfiBoots
+    class VFD
     {
-        dir = "InfiBoots";
+        dir = "VFD";
         picture = "";
         action = "";
         hideName = 1;
         hidePicture = 1;
-        name = "InfiBoots";
+        name = "Variable Footwear Damage";
         credits = "SteelShot";
         author = "SteelShot";
         authorID = "76561198029852322";
@@ -48,13 +48,13 @@ class CfgMods
             class worldScriptModule
             {
                 value = "";
-                files[] = {"InfiBoots/scripts/4_World"};
+                files[] = {"VFD/scripts/4_World"};
             };
 
             class missionScriptModule
             {
                 value = "";
-                files[] = {"InfiBoots/scripts/5_Mission"};
+                files[] = {"VFD/scripts/5_Mission"};
             };
         };
     };

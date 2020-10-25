@@ -1,2 +1,2 @@
-# InfiBoots
-DayZ-SA Mod: InfiBoots - Boots take no damage from travel
+# Variable Footwear Damage
+DayZ-SA Mod: VFD - Modify footwear wear to your liking

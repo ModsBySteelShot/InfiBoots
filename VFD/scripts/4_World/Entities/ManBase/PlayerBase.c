@@ -15,13 +15,13 @@
 
 modded class PlayerBase
 {
-	private float IB_SHOES_MOVEMENT_DAMAGE_PER_STEP = 0.035;
+	private float VFD_SHOES_MOVEMENT_DAMAGE_PER_STEP = 0.035;
 
     override void Init()
     {
         super.Init();
 
-        IB_SHOES_MOVEMENT_DAMAGE_PER_STEP = InfiBoots.GetConf().GetSettingValueByKey("SHOES_MOVEMENT_DAMAGE_PER_STEP");
+        VFD_SHOES_MOVEMENT_DAMAGE_PER_STEP = VFD.GetConf().GetSettingValueByKey("SHOES_MOVEMENT_DAMAGE_PER_STEP");
 	}
 
     override void ProcessFeetDamageServer(int pUserInt)
@@ -35,10 +35,10 @@ modded class PlayerBase
         GetGame().SurfaceUnderObject(this, surface, liquid);
         float modifier_surface = Surface.GetParamFloat(surface, "footDamage");
 
-        if (IB_SHOES_MOVEMENT_DAMAGE_PER_STEP != 0)
+        if (VFD_SHOES_MOVEMENT_DAMAGE_PER_STEP != 0)
             if (shoes && shoes.GetHealthLevel() < 4)
             {
-                shoes.AddHealth("", "", -1 * modifier_surface * IB_SHOES_MOVEMENT_DAMAGE_PER_STEP * (float)PlayerConstants.CHECK_EVERY_N_STEP);
+                shoes.AddHealth("", "", -1 * modifier_surface * VFD_SHOES_MOVEMENT_DAMAGE_PER_STEP * (float)PlayerConstants.CHECK_EVERY_N_STEP);
 
                 return;
             }
