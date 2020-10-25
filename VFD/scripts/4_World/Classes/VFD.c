@@ -32,7 +32,7 @@ class VFDConf
 {
 	private const string CONFIG_NAME = "VFD.cfg";
 
-	private const string CONFIG_PATH = "$profile:VFD.cfg"
+	private const string CONFIG_PATH = "$profile:VFD.cfg";
 
 	private const float SHOES_MOVEMENT_DAMAGE_PER_STEP = 0.035;
 
